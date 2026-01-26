@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Snowmen Puzzle</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #eef7ff;
+      padding: 20px;
+    }
+
+    .info {
+      text-align: center;
+      margin-bottom: 25px;
+    }
+
+    /* Flex container for the puzzle */
+    .flex-puzzle {
+      display: flex;
+      flex-wrap: wrap;
+      width: 800px;        /* wide enough for 4 columns */
+      margin: 0 auto;
+    }
+
+    /* Each puzzle piece */
+    .flex-puzzle img {
+      width: 25%;
+      height: auto;
+      object-fit: cover;
+      border: 2px solid #ccc;
+      box-sizing: border-box;
+    }
+
+
+    /* Hide the faulty piece */
+    .hidden-piece {
+      display: none;
+    }
+  </style>
+
+</head>
+<body>
+
+  <section class="info">
+    <h1>Your Name: Andrey</h1>
+    <h2>Puzzle: Snowmen</h2>
+    <h3>Date Completed: January 23, 2026</h3>
+  </section>
+
+  <div class="flex-puzzle">
+    <img src="Images/puzzle2_K.jpg" alt="Piece 1">
+    <img src="Images/puzzle2_M.jpg" alt="Piece 2">
+    <img src="Images/puzzle2_E.jpg" alt="Piece 3">
+    <img src="Images/puzzle2_G.jpg" alt="Piece 4">
+    <img src="Images/puzzle2_A.jpg" alt="Piece 5">
+    <img src="Images/puzzle2_D.jpg" alt="Piece 6">
+    <img src="Images/puzzle2_L.jpg" alt="Piece 7">
+    <img src="Images/puzzle2_B.jpg" alt="Piece 8">
+    <img src="Images/puzzle2_F.jpg" alt="Piece 9">
+    <img src="Images/puzzle2_J.jpg" alt="Piece 10">
+    <img src="Images/puzzle2_H.jpg" alt="Piece 11">
+    <img src="Images/puzzle2_I.jpg" alt="Piece 12">
+
+    <!-- Faulty piece (hidden) -->
+    <img src="Images/puzzle2_C.jpg" alt="Faulty Piece" class="hidden-piece">
+  </div>
+
+</body>
+</html>
