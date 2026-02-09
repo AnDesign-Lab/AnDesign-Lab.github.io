@@ -1,0 +1,36 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 40px;
+    background-color: #f7f7f7;
+    color: #333;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.step {
+    background: white;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.step img {
+    width: 100%;
+    max-width: 600px;
+    margin-top: 15px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+}
+
+section h2 {
+    margin-top: 0;
+}
