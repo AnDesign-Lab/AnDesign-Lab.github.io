@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Physics Review Flashcards</title>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background: linear-gradient(135deg, #1e3c72, #2a5298);
+        margin: 0;
+        padding: 0;
+        animation: fadeIn 1.5s ease-in;
+    }
+
+    /* Page Title */
+    h1 {
+        text-align: center;
+        color: white;
+        margin-top: 30px;
+        font-size: 40px;
+        letter-spacing: 2px;
+        animation: slideDown 1.2s ease-out;
+    }
+
+    /* Flashcard Grid */
+    .container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+        padding: 40px;
+    }
+
+    /* Individual Card */
+    .card {
+        background: white;
+        padding: 20px;
+        border-radius: 12px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+        position: relative;
+        overflow: hidden;
+        cursor: pointer;
+        transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+        transform: scale(1.05);
+    }
+
+    /* Hidden Answer */
+    .answer {
+        position: absolute;
+        bottom: -100%;
+        left: 0;
+        width: 100%;
+        background: #2a5298;
+        color: white;
+        padding: 15px;
+        text-align: center;
+        transition: bottom 0.4s ease;
+    }
+
+    .card:hover .answer {
+        bottom: 0;
+    }
+
+    /* Animations */
+    @keyframes fadeIn {
+        from { opacity: 0; }
+        to { opacity: 1; }
+    }
+
+    @keyframes slideDown {
+        from { transform: translateY(-40px); opacity: 0; }
+        to { transform: translateY(0); opacity: 1; }
+    }
+</style>
+</head>
+
+<body>
+
+<h1>Physics Review Flashcards</h1>
+
+<div class="container">
+
+    <!-- CARD 1 -->
+    <div class="card">
+        <p><strong>Does light speed up or slow down in denser media?</strong></p>
+        <div class="answer">Light slows down in denser media.</div>
+    </div>
+
+    <!-- CARD 2 -->
+    <div class="card">
+        <p><strong>What is being refracted in a mirage?</strong></p>
+        <div class="answer">Light from the blue sky.</div>
+    </div>
+
+    <!-- CARD 3 -->
+    <div class="card">
+        <p><strong>Fast → Slow: how does light bend?</strong></p>
+        <div class="answer">Toward the normal line.</div>
+    </div>
+
+    <!-- CARD 4 -->
+    <div class="card">
+        <p><strong>Does light change speed when entering a new medium?</strong></p>
+        <div class="answer">Yes — the speed changes.</div>
+    </div>
+
+    <!-- CARD 5 -->
+    <div class="card">
+        <p><strong>What causes refraction?</strong></p>
+        <div class="answer">A change in light’s speed.</div>
+    </div>
+
+    <!-- CARD 6 -->
+    <div class="card">
+        <p><strong>Where does light travel fastest?</strong></p>
+        <div class="answer">In a vacuum.</div>
+    </div>
+
+    <!-- CARD 7 -->
+    <div class="card">
+        <p><strong>Why does a straw look bent in water?</strong></p>
+        <div class="answer">Light bends when changing speed.</div>
+    </div>
+
+    <!-- CARD 8 -->
+    <div class="card">
+        <p><strong>What creates the shimmering effect on hot roads?</strong></p>
+        <div class="answer">Refraction through hot and cool air layers.</div>
+    </div>
+
+</div>
+
+</body>
+</html>
