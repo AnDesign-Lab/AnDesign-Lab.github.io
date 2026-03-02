@@ -1,0 +1,194 @@
+/* Basic reset and typography */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f5f5f5;
+  color: #222;
+}
+
+a {
+  color: #0055aa;
+}
+
+a:hover,
+a:focus {
+  text-decoration: underline;
+}
+
+/* Layout */
+header,
+nav,
+main,
+footer {
+  padding: 1rem;
+}
+
+header {
+  background-color: #222;
+  color: #000; /* CHANGED FROM #fff */
+  padding: 2rem 1rem;
+  text-align: center;
+  border-bottom: 4px solid #0055aa;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+
+header p {
+  margin: 0.5rem 0 0;
+  font-size: 1.2rem;
+  opacity: 0.9;
+}
+
+/* Flexbox navigation */
+nav {
+  background-color: #333;
+}
+
+.nav-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.nav-list li {
+  margin-right: 1rem;
+}
+
+.nav-list a {
+  color: #000; /* CHANGED FROM #fff */
+  text-decoration: none;
+  padding: 0.5rem 0;
+}
+
+.nav-list a:hover,
+.nav-list a:focus {
+  text-decoration: underline;
+}
+
+/* Main content container */
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 1rem;
+  background-color: #fff;
+}
+
+/* Images and figures */
+figure {
+  margin: 1rem 0;
+  text-align: center;
+}
+
+figure img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+figcaption {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* Lists */
+.simple-list {
+  list-style: disc;
+  padding-left: 1.5rem;
+}
+
+.nested-list {
+  list-style: square;
+  padding-left: 1.5rem;
+}
+
+.nested-list ul {
+  list-style: circle;
+  padding-left: 1.5rem;
+}
+
+/* Table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0;
+}
+
+th,
+td {
+  border: 1px solid #ccc;
+  padding: 0.5rem;
+  text-align: left;
+}
+
+th {
+  background-color: #eee;
+}
+
+/* Form */
+form {
+  max-width: 500px;
+}
+
+form label {
+  display: block;
+  margin-top: 0.75rem;
+}
+
+form input,
+form textarea,
+form select {
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 0.25rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+form button {
+  margin-top: 1rem;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 4px;
+  background-color: #0055aa;
+  color: #fff;
+  cursor: pointer;
+}
+
+form button:hover,
+form button:focus {
+  background-color: #003f7a;
+}
+
+/* Grid for events */
+.events-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+}
+
+.event-card {
+  border: 1px solid #ddd;
+  padding: 1rem;
+  border-radius: 4px;
+  background-color: #fafafa;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  font-size: 0.85rem;
+  background-color: #222;
+  color: #000; /* CHANGED FROM #fff */
+  margin-top: 2rem;
+}
